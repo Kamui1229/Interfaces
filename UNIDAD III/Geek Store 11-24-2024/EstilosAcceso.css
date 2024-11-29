@@ -1,0 +1,114 @@
+
+.ContenedorAbu {
+
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2%;
+    display: grid;
+    place-items: center;
+
+}
+
+.ContenedorPad {
+
+    display: flex;
+    transition: transform 0.5s ease;
+    background-color: white;
+    width: 85%;
+    border-radius: 15px;
+    padding: .5%;
+    margin-bottom: 1%;
+
+}
+
+.ContenedorRegistro {
+
+    margin: .5%;
+    min-width: 20%;
+    flex: 1;
+    border-right: 1px black solid;
+
+}
+.ContenedorRegistro h2{
+
+    text-align: center;
+    color: black;
+    margin-bottom: 7%;
+
+}
+
+.ContenedorIniciar {
+
+    margin: .5%;
+    min-width: 20%;
+    flex: 1;
+
+}
+.ContenedorIniciar h2{
+
+    text-align: center;
+    color: black;
+    margin-bottom: 7%;
+
+}
+
+form label{
+
+    color: black;
+    font-size: x-large;
+
+}
+form input{
+
+    width: 75%;
+    padding: 1%;
+    margin-bottom: 5%;
+    font-size: larger;
+
+}
+
+.Submit{
+
+    width: 30%;
+    color: white;
+    font-size: large;
+    background-color: #415bee;
+    border: #415bee solid;
+    border-radius: 15px;
+    padding: 2%;
+    transition: 0.3s;
+
+}
+.Submit:hover{
+
+    color: #415bee;
+    background-color: white;
+
+}
+
+/* Para otras resoluciones */
+
+@media (max-width: 768px){
+
+    .ContenedorPad{
+
+        width: 95%;
+        display: grid;
+
+    }
+
+    .ContenedorRegistro{
+        
+        border-right: white solid;
+        margin-left: 3%;
+
+    }
+
+    .Submit{
+
+        width: 40%;
+
+    }
+
+}
