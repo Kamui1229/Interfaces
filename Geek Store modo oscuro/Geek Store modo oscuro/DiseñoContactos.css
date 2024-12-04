@@ -1,0 +1,72 @@
+.ContenedorCentral{
+
+    display: grid;
+    place-items: center;
+
+}
+
+.ContenedorContactos{
+
+    background-color: white;
+    display: flex;
+    border: 1px solid;
+    box-shadow: 10px 10px 7px 0px rgb(37, 37, 37);
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 85%;
+    margin-bottom: 15%;
+    transition: 0.5s;
+
+}
+body.dark-mode .ContenedorContactos{
+
+    box-shadow: 0 0 0 0;
+
+}
+
+.Contactos{
+
+    flex: 1;
+    text-align: center;
+    padding:3%;
+
+}
+.Contactos i{
+
+    font-size: xx-large;
+
+}
+.Contactos a{
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+/* Para otras resoluciones */
+
+@media (max-width: 768px){
+
+    .ContenedorCentral{
+
+        width: 95%;
+
+
+    }
+
+    .ContenedorContactos{
+        
+        border-right: white solid;
+        display: grid;
+        place-content: center;
+
+    }
+
+    .Contactos{
+
+        padding: 5%;
+
+    }
+
+}
