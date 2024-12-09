@@ -2,9 +2,35 @@
 body{
 
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(37, 37, 37);
-    color: white;
+    background-color: white;
+    color: rgb(37, 37, 37);
+    transition: 0.5s;
     
+}
+body.dark-mode{
+
+    background-color: #121212;
+    color: #ffffff;
+
+}
+
+.BotonOscuridad{
+
+    margin-top: 1%;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    background-color: #415bee;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+.BotonOscuridad:hover{
+
+    background-color: white;
+    color: black;
+
 }
 
 header {
@@ -85,11 +111,18 @@ nav ul li a:hover {
 .ContenedorHijos {
 
     background-color: white;
+    box-shadow: 10px 10px 7px 0px rgb(37, 37, 37);
     margin: .5%;
     min-width: 20%;
     display: grid;
     place-items: center;
     flex: 0 0 20%;
+    transition: 0.5s;
+
+}
+body.dark-mode .ContenedorHijos{
+
+    background-color: rgb(65, 65, 65);
 
 }
 .ContenedorHijos img{
@@ -103,7 +136,12 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 150%;
     text-align: center;
+    transition: 0.5s;
 
+}
+body.dark-mode .ContenedorHijos p{
+
+    color: white;
 }
 
 .carousel-button {
@@ -142,6 +180,16 @@ footer{
     background-color: rgb(92, 92, 92);
     padding: 10px;
     margin-top: 10px;
+
+}
+footer h2{
+
+    color: white;
+
+}
+footer p{
+
+    color: white;
 
 }
 

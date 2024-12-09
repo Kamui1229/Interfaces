@@ -13,12 +13,20 @@
 .ContenedorPad {
 
     display: flex;
+    border: 1px solid;
+    box-shadow: 10px 10px 7px 0px rgb(37, 37, 37);
     transition: transform 0.5s ease;
     background-color: white;
     width: 85%;
     border-radius: 15px;
     padding: .5%;
     margin-bottom: 1%;
+    transition: 0.5;
+
+}
+body.dark-mode .ContenedorPad{
+
+    box-shadow: 0 0 0 0;
 
 }
 

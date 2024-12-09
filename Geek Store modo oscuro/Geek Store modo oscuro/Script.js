@@ -1,4 +1,33 @@
 
+// modo oscuro----------------------------------------------------
+
+// Referencia al botón
+const toggleButton = document.getElementById('toggle-dark-mode');
+
+// Detectar el tema actual o el preferido guardado
+
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+
+  document.body.classList.add('dark-mode');
+}
+
+// Cambiar entre modo claro y oscuro
+
+toggleButton.addEventListener('click', () => {
+
+  document.body.classList.toggle('dark-mode');
+  
+  // Guardar la preferencia del usuario
+
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+
+});
+
+//responsividad de la pagina------------------------------------------
+
     let currentIndex = 0;
     let visibleImages = getVisibleImages();
     const totalImages = document.querySelectorAll('.ContenedorHijos').length;
@@ -45,6 +74,8 @@
         currentIndex = 0;
         showImage();
     });
+
+    //boton hamburguesa--------------------------------------------------------------
 
     function toggleMenu() {
         document.querySelector('.navbar').classList.toggle('show');
